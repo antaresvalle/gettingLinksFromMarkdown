@@ -33,4 +33,4 @@ console.log(links);
 // ]
 ```
 
-## Implemntación:
+## Implementación:
