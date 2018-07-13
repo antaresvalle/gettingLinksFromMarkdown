@@ -21,7 +21,7 @@ const gettingLinksFromMarkdown = (md) => {
 
     let hrefAndTextMd = [];
 
-    for(var i = 0; i < matchRgxAndMd.length; i++) {
+    for(let i = 0; i < matchRgxAndMd.length; i++) {
         hrefAndTextMd.push({ //Se ingresa al array cada objeto con las propiedades href y text
             href: matchRgxAndMd[i + 1],
             text: matchRgxAndMd[i].slice(1,-1)
