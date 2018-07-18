@@ -1,23 +1,21 @@
-"use strict";
+'use strict';
 
-var str = "# Lorem ipsum\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor\nincididunt ut [labore](https://en.wiktionary.org/wiki/labore) et\n[dolore](https://en.wiktionary.org/wiki/dolore) magna aliqua. Ut enim ad minim\nveniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\nconsequat.\n\n[foo](http://foo.com)\n\nDuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu\nfugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in\nculpa qui officia deserunt mollit anim id est laborum.";
+var inpLinks = document.getElementById('textMD');
+var btn = document.getElementById('btn');
 
-var gettingLinksFromMarkdown = function gettingLinksFromMarkdown(md) {
-    var rgx = /(\[(.*?)\])|(https?|ftp):\/\/([\w_-]+(?:(?:\.[\w_-]+)+))([\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])?/gi;
-    var matchRgxAndMd = md.match(rgx); //Retorna array con texto y href 
-
-    console.log(matchRgxAndMd);
-
-    var hrefAndTextMd = [];
-
-    for (var i = 0; i < matchRgxAndMd.length; i++) {
-        hrefAndTextMd.push({ //Se ingresa al array cada objeto con las propiedades href y text
-            href: matchRgxAndMd[i + 1],
-            text: matchRgxAndMd[i].slice(1, -1)
-        });
-        i++;
-    }
-    console.log(hrefAndTextMd); //Devuelve el array de objetos (links)
+var getMD = function getMD() {
+    var textMarkdown = inpLinks.value;
+    //console.log(textMarkdown);
+    printLinks(textMarkdown);
 };
 
-gettingLinksFromMarkdown(str);
+var printLinks = function printLinks(txt) {
+    var links = document.getElementById('links');
+    var linksResult = gettingLinksFromMarkdown(txt);
+    console.log(linksResult);
+    links.innerHTML = linksResult;
+};
+
+btn.addEventListener('click', function () {
+    getMD();
+});
