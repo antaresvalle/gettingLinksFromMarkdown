@@ -11,7 +11,7 @@ const printLinks = (txt) => {
     let links = document.getElementById('links');
     let linksResult = gettingLinksFromMarkdown(txt);
     console.log(linksResult);
-    links.innerHTML = linksResult;
+    links.innerHTML = JSON.stringify(linksResult);
 }
 
 btn.addEventListener('click', () => {

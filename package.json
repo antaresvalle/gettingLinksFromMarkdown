@@ -14,13 +14,14 @@
     "mocha": "^5.2.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha test/gettingLinksFromMarkdown.spec.js",
+    "build": "babel src --out-dir dist"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/antaresvalle/gettingLinksFromMarkdown.git"
   },
-  "author": "",
+  "author": "Antares Valle & Jesica Domínguez",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/antaresvalle/gettingLinksFromMarkdown/issues"

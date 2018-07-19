@@ -14,8 +14,8 @@ var gettingLinksFromMarkdown = function gettingLinksFromMarkdown(md) {
             text: result[1]
         });
     }
-    console.log(hrefAndTextMd); //Devuelve el array de objetos (links)
-    return JSON.stringify(hrefAndTextMd);
+
+    return hrefAndTextMd;
 };
 
 //exportando globalmente
