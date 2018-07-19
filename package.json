@@ -2,7 +2,7 @@
   "name": "getting-links-from-markdown",
   "version": "1.0.0",
   "description": "***",
-  "main": "index.js",
+  "main": "./dist/gettingLinksFromMarkdown.js",
   "directories": {
     "test": "tests"
   },

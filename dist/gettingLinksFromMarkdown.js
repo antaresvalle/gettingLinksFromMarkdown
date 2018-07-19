@@ -8,6 +8,7 @@ var gettingLinksFromMarkdown = function gettingLinksFromMarkdown(md) {
 
     var hrefAndTextMd = [];
 
+    var result = '';
     while (result = rgx.exec(mdWithoutImg)) {
         hrefAndTextMd.push({ //Se ingresa al array cada objeto con las propiedades href y text
             href: result[2],

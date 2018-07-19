@@ -6,6 +6,7 @@ const gettingLinksFromMarkdown = (md) => {
 
     let hrefAndTextMd = [];
 
+    let result = '';
     while (result = rgx.exec(mdWithoutImg)) {
         hrefAndTextMd.push({ //Se ingresa al array cada objeto con las propiedades href y text
             href: result[2],
