@@ -57,3 +57,5 @@ Include it in your HTML:
 ```html
 <script src="node_modules/getting-links-from-markdown/dist/gettingLinksFromMarkdown.js"></script>
 ```
+### Authors
+Antares Valle & Jesica Domínguez
