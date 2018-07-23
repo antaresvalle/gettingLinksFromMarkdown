@@ -57,5 +57,11 @@ Include it in your HTML:
 ```html
 <script src="node_modules/getting-links-from-markdown/dist/gettingLinksFromMarkdown.js"></script>
 ```
+
+### NPM package
+
+[https://www.npmjs.com/package/getting-links-from-markdown](https://www.npmjs.com/package/getting-links-from-markdown) 
+
+
 ### Authors
 Antares Valle & Jesica Domínguez
