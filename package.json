@@ -1,6 +1,6 @@
 {
   "name": "getting-links-from-markdown",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "***",
   "main": "./dist/gettingLinksFromMarkdown.js",
   "directories": {
