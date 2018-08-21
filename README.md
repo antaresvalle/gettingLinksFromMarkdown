@@ -4,7 +4,10 @@
 
 Getting links from Markdown it’s a module that receives a string in Markdown format and extracts all the links founded, returning an array of objects.
 
+![Preview](/src/preview.jpg)
+
 Visit the test page at [https://antaresvalle.github.io/gettingLinksFromMarkdown/](https://antaresvalle.github.io/gettingLinksFromMarkdown/) 
+
 
 ## Usage
 Install the next command in the terminal:
@@ -65,3 +68,6 @@ Include it in your HTML:
 
 ### Authors
 Antares Valle & Jesica Domínguez
+
+## Desarrollado para 
+[Laboratoria](http://laboratoria.la)
