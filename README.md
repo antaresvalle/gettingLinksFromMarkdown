@@ -4,7 +4,7 @@
 
 Getting links from Markdown it’s a module that receives a string in Markdown format and extracts all the links founded, returning an array of objects.
 
-![Preview](/src/preview.jpg)
+![Preview](https://user-images.githubusercontent.com/37418496/45055895-db6f9880-b056-11e8-9642-ca36ef371b3e.jpg)
 
 Visit the test page at [https://antaresvalle.github.io/gettingLinksFromMarkdown/](https://antaresvalle.github.io/gettingLinksFromMarkdown/) 
 
